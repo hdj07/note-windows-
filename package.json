@@ -1,0 +1,23 @@
+﻿{
+  "name": "note-app-desktop",
+  "version": "1.0.0",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "dependencies": {
+    "electron": "^25.9.8",
+    "file-saver": "^2.0.5",
+    "quill": "^2.0.3"
+  },
+  "devDependencies": {
+    "electron-builder": "^23.6.0"
+  },
+  "build": {
+    "appId": "com.note.app",
+    "win": {
+      "target": "nsis"
+    }
+  }
+}
